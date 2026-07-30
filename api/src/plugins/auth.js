@@ -49,8 +49,7 @@ export const authPlugin = fp(async function auth(app) {
       path === '/health'                  ||
       path === '/login.html'              ||
       path === '/api/auth/login'          ||
-      path === '/api/auth/logout'         ||
-      path === '/api/whatsapp/webhook';   // Kapso calls this — verified by HMAC instead
+      path === '/api/auth/logout';
 
     if (isPublic) return;
 
